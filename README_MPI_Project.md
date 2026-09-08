@@ -1,4 +1,4 @@
-# ⚡ Scalable Parallel Data Exchange and Communication Framework Using MPI
+#  Scalable Parallel Data Exchange and Communication Framework Using MPI
 
 > **MPI-based distributed-memory application for iterative data exchange, parallel computation, and scalability benchmarking.**
 
@@ -12,7 +12,7 @@ The implementation is benchmarked across different **process counts and data siz
 
 ---
 
-## 🔬 Methods
+##  Methods
 
 - **MPI Communication:** Point-to-point data exchange between configurable rank distances \(D_1\) and \(D_2\).
 - **Parallel Computation:** \(D_1\) receivers perform element-wise square operations, while \(D_2\) receivers apply logarithmic transformations.
@@ -28,7 +28,7 @@ Data Initialization → MPI Point-to-Point Exchange → D1/D2 Computation → Re
 
 ---
 
-## 🛠️ Key Contributions
+##  Key Contributions
 
 - Developed a **distributed-memory MPI application in C** for configurable point-to-point data exchange.
 - Implemented **iterative communication and parallel numerical computation** for large data arrays.
@@ -77,34 +77,4 @@ The project demonstrates an MPI-based **distributed-memory communication and com
 
 ---
 
-## 📁 Repository Structure
-
-```text
-.
-├── README.md
-├── src/
-│   └── main.c
-├── scripts/
-│   └── run_benchmark.sh
-├── results/
-│   └── execution_times.csv
-└── plots/
-    └── scalability_boxplot.png
-```
-
-> Add the actual source code, benchmark script, measured results, and final plot to the corresponding folders before publishing the repository.
-
----
-
-## ▶️ Execution
-
-```bash
-mpirun -np <P> -f hostfile ./src/main <M> <D1> <D2> <T> <seed>
-```
-
-Example:
-
-```bash
-mpirun -np 16 -f hostfile ./src/main 1048576 2 4 10 1000
-```
 
